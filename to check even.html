@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <div>
+        <h4 class="text-center">Check for odd and even</h4>
+        <input type="text" class="form-control form-control-sm shadow-none my-3 w-100 px-lgl3 px-2" placeholder="Input number" id="num">
+        <button class="btn btn-sm btn-dark my-3 w-100" onclick="checkResult()">check</button>
+        <div id="res" class="p-3 m-3 bg-white">show</div>
+    </div>
+    <script>
+        function checkResult(){
+            // var num = Number(score.value)
+            var inp = document.getElementById('num')
+            if ((Number(inp.value) % 2) == 0) {
+                console.log('even');
+                res.innerHTML = 'even'
+            } else{
+                console.log('odd');
+                res.innerHTML = 'odd'
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <Button onclick="testing()">test</Button>
+<script>
+    var socreOfStudent = 100 
+    function testing(){
+        if (socreOfStudent >= 0 && socreOfStudent < 40) {
+            console.log('fail');
+        } else if (socreOfStudent >= 40 && socreOfStudent < 45) {
+            console.log('fair');
+        }
+        else if(socreOfStudent >= 45 && socreOfStudent < 49 ) {
+            console.log('pass');
+        }
+        else if (socreOfStudent >= 49 && socreOfStudent < 59) {
+            console.log('good');
+        }
+        else if (socreOfStudent >= 59 && socreOfStudent < 69) {
+            console.log('V-good');
+        }
+        else if (socreOfStudent >= 69 && socreOfStudent <= 100) {
+            console.log('Excellent');
+        }
+    } 
+
+</script>
+</body>
+</html>

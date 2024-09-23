@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    
+<!-- <p id="students">Hello serious developer it is a noble pleasure to bewith this wonderful gathering of elith-minded people...</p> -->
+
+<div></div>
+
+<input type="text" placeholder="Enter your score" id="score">
+<button onclick="CheckScore()">Show</button>
+<div id="result" >Your result will appear here</div>
+    <script>
+        
+    // students.innerHTML = "Hi everyone"
+    // console.log(students.innerHTML)
+
+        function CheckScore() {
+            var num = Number(score.value)
+            if (num >= 0 && num < 40) {
+                console.log('F-Fail');
+                result.innerHTML = "F - Fail"
+            } else if (num >= 40 && num < 45) {
+                console.log('E-Pass')
+                result.innerHTML = `E-Pass`
+            }
+
+        }
+    </script>
+</body>
+
+</html>
